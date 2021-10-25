@@ -1,10 +1,10 @@
-.clients {
-  padding-top: 95px;
-  padding-bottom: 95px;
-}
+// .clients {
+//   padding-top: 95px;
+//   padding-bottom: 95px;
+// }
 
 .clients__title {
-  display: flex;
+  // display: flex;
   justify-content: center;
   margin-bottom: 50px;
   font-weight: 700;
@@ -18,21 +18,20 @@
 
 .clients__list {
   display: flex;
-  flex-direction: row;
+  // flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .clients__item {
   margin-right: 30px;
-  flex-basis: calc(100% / 6 - 30px);
-
-  &:last-child {
-    margin-right: 0;
-  }
+  margin-bottom: 30px;
 }
 
 .clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;

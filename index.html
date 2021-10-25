@@ -20,33 +20,37 @@
       <div class="wrapper">
         <nav class="header__nav">
           <a href="#" class="logo header__logo link"><span class="header__span">Web</span>Studio</a>
-          <ul class="navigation list">
-            <li class="navigation__item">
-              <a class="navigation__link active navigation__link-first link" href="#">Студия</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="navigation__item"><a class="navigation__link link" href="#">Контакты</a></li>
-          </ul>
-          <ul class="header-contact list">
-            <li class="header-contact__item">
-              <a class="header-contact__header-email link" href="mailto:info@devstudio.com">
-                <svg class="header-contact__icon" width="16" height="16">
-                  <use href="./images/symbol-defs.svg#envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="header-contact__item">
-              <a class="header-contact__header-tel link" href="tel:+38 096 111 11 11">
-                <svg class="header-contact__icon" width="16" height="16">
-                  <use href="./images/symbol-defs.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+          <div class="header-mobilemenu">
+            <ul class="navigation list">
+              <li class="navigation__item">
+                <a class="navigation__link active navigation__link-first link" href="#">Студия</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link link" href="#">Контакты</a>
+              </li>
+            </ul>
+            <ul class="header-contact list">
+              <li class="header-contact__item">
+                <a class="header-contact__header-email link" href="mailto:info@devstudio.com">
+                  <svg class="header-contact__icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header-contact__item">
+                <a class="header-contact__header-tel link" href="tel:+38 096 111 11 11">
+                  <svg class="header-contact__icon" width="16" height="16">
+                    <use href="./images/symbol-defs.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -100,19 +104,46 @@
           <h2 class="wwd__title">Чем мы занимаемся</h2>
           <ul class="wwd__list list">
             <li class="wwd__item">
-              <img src="./images/img1.jpg" alt="Человек работает на компьютере" width="370" />
+              <img
+                srcset="
+                  ./images/wwd/img1.jpg     1x,
+                  ./images/wwd/img1__2x.jpg 2x,
+                  ./images/wwd/img1__3x.jpg 3x
+                "
+                src="./images/wwd/img1.jpg"
+                alt="Человек работает на компьютере"
+                width="370"
+              />
               <div class="wwd__description">
                 <p class="wwd__text">Десктопные приложения</p>
               </div>
             </li>
             <li class="wwd__item">
-              <img src="./images/img2.jpg" alt="Человек работает на смартфоне" width="370" />
+              <img
+                srcset="
+                  ./images/wwd/img2.jpg     1x,
+                  ./images/wwd/img2__2x.jpg 2x,
+                  ./images/wwd/img2__3x.jpg 3x
+                "
+                src="./images/wwd/img2.jpg"
+                alt="Человек работает на смартфоне"
+                width="370"
+              />
               <div class="wwd__description">
                 <p class="wwd__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="wwd__item">
-              <img src="./images/img3.jpg" alt="Человек работает на планшете" width="370" />
+              <img
+                srcset="
+                  ./images/wwd/img3.jpg     1x,
+                  ./images/wwd/img3__2x.jpg 2x,
+                  ./images/wwd/img3__3x.jpg 3x
+                "
+                src="./images/wwd/img3.jpg"
+                alt="Человек работает на планшете"
+                width="370"
+              />
               <div class="wwd__description">
                 <p class="wwd__text">Дизайнерские решения</p>
               </div>
@@ -128,9 +159,15 @@
           <ul class="team__list list">
             <li class="team-item">
               <img
-                src="./images/personal1.jpg"
+                srcset="
+                  ./images/team/personal1.jpg     1x,
+                  ./images/team/personal1__2x.jpg 2x,
+                  ./images/team/personal1__3x.jpg 3x
+                "
+                src="./images/team/personal1.jpg"
                 alt="Игорь Демьяненко-Product Designer"
-                width="270"
+                width="450"
+                class="team-item_img"
               />
               <h2 class="team-item__title">Игорь Демьяненко</h2>
               <p class="team-item__text" lang="en">Product Designer</p>
@@ -166,7 +203,17 @@
               </ul>
             </li>
             <li class="team-item">
-              <img src="./images/personal2.jpg" alt="Ольга Репина-Frontend Developer" width="270" />
+              <img
+                srcset="
+                  ./images/team/personal2.jpg     1x,
+                  ./images/team/personal2__2x.jpg 2x,
+                  ./images/team/personal2__3x.jpg 3x
+                "
+                src="./images/team/personal2.jpg"
+                alt="Ольга Репина-Frontend Developer"
+                width="450"
+                class="team-item_img"
+              />
               <h2 class="team-item__title">Ольга Репина</h2>
               <p class="team-item__text" lang="en">Frontend Developer</p>
               <ul class="team-social list">
@@ -201,7 +248,17 @@
               </ul>
             </li>
             <li class="team-item">
-              <img src="./images/personal3.jpg" alt="Николай Тарасов-Marketing" width="270" />
+              <img
+                srcset="
+                  ./images/team/personal3.jpg     1x,
+                  ./images/team/personal3__2x.jpg 2x,
+                  ./images/team/personal3__3x.jpg 3x
+                "
+                src="./images/team/personal3.jpg"
+                alt="Николай Тарасов-Marketing"
+                width="450"
+                class="team-item_img"
+              />
               <h2 class="team-item__title">Николай Тарасов</h2>
               <p class="team-item__text" lang="en">Marketing</p>
               <ul class="team-social list">
@@ -236,7 +293,17 @@
               </ul>
             </li>
             <li class="team-item">
-              <img src="./images/personal4.jpg" alt="Михаил Ермаков-UI Designer" width="270" />
+              <img
+                srcset="
+                  ./images/team/personal4.jpg     1x,
+                  ./images/team/personal4__2x.jpg 2x,
+                  ./images/team/personal4__3x.jpg 3x
+                "
+                src="./images/team/personal4.jpg"
+                alt="Михаил Ермаков-UI Designer"
+                width="450"
+                class="team-item_img"
+              />
               <h2 class="team-item__title">Михаил Ермаков</h2>
               <p class="team-item__text" lang="en">UI Designer</p>
               <ul class="team-social list">

@@ -1,11 +1,22 @@
-.benefits {
-  padding-top: 95px;
-  padding-bottom: 95px;
-}
+// .benefits {
+//   padding-top: 95px;
+//   padding-bottom: 95px;
+// }
 
 .benefits__list {
-  display: flex;
+  // display: flex;
   justify-content: space-between;
+}
+
+.benefits__item {
+  margin-bottom: 30px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .icon1::before {
@@ -13,7 +24,7 @@
   display: block;
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url(../images/antenna.svg);
+  background-image: url(../images/benefits/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
@@ -25,7 +36,7 @@
   display: block;
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url(../images/clock.svg);
+  background-image: url(../images/benefits/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
@@ -37,7 +48,7 @@
   display: block;
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url(../images/diagram.svg);
+  background-image: url(../images/benefits/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
@@ -49,7 +60,7 @@
   display: block;
   height: 120px;
   background-color: #f5f4fa;
-  background-image: url(../images/astronaut.svg);
+  background-image: url(../images/benefits/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
@@ -64,10 +75,15 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $secondary-title-color;
+
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .benefits__description {
-  width: 270px;
+  min-width: 270px;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;

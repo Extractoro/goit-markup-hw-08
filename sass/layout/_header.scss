@@ -1,6 +1,11 @@
 .header {
   display: flex;
   flex-direction: row;
+  padding: 16px 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 25px 0;
+  }
 }
 
 .header-portfolio {
@@ -10,13 +15,19 @@
 
 .header__logo {
   margin-right: 93px;
-  padding-top: 25px;
-  padding-bottom: 25px;
 }
 
 .header__nav {
   display: flex;
   flex-direction: row;
+}
+
+.header-mobilemenu {
+  display: none;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .navigation {
