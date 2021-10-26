@@ -1,0 +1,12 @@
+.menu-toggle,
+.menu-close {
+  background-color: transparent;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.icon__menu {
+  fill: #000;
+}

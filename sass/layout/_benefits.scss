@@ -1,17 +1,35 @@
-// .benefits {
-//   padding-top: 95px;
-//   padding-bottom: 95px;
-// }
+.benefits {
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 95px;
+    padding-top: 95px;
+  }
+}
 
 .benefits__list {
-  // display: flex;
   justify-content: space-between;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .benefits__item {
   margin-bottom: 30px;
   @media screen and (min-width: $desktop) {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 270px;
   }
 
   &:last-child {
@@ -76,7 +94,7 @@
   text-transform: uppercase;
   color: $secondary-title-color;
 
-  @media screen and (max-width: $tablet) {
+  @media screen and (max-width: 767px) {
     display: flex;
     justify-content: center;
   }

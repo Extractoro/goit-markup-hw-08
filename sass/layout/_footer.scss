@@ -2,6 +2,10 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 0;
+  }
 }
 
 .footer__flex {
@@ -9,6 +13,33 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: baseline;
+  }
+}
+
+.footer__social-flex {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $desktop) {
+    align-items: baseline;
+  }
+}
+
+.footer__social {
+  @media screen and (min-width: $tablet) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 0;
+  }
 }
 
 .footer__logo {
@@ -58,10 +89,15 @@
 }
 
 .footer__invite {
-  // margin-left: 70px;
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
+    margin-bottom: 0;
+    margin-right: 93px;
+  }
 }
 
 .footer__text {
@@ -113,11 +149,14 @@
 }
 
 .footer-form {
- display: flex;
-flex-direction: column;
-align-items: center;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
 
 .footer-form__label {
   font-weight: 700;
@@ -132,18 +171,27 @@ align-items: center;
   background-color: transparent;
   color: $primary-title-color;
   padding-left: 15px;
-  width: 450px;
+  width: 300px;
   height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(105, 103, 103, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+  }
 }
 
 .footer-form__submit {
   position: relative;
+  top: 7px;
   background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -164,7 +212,7 @@ align-items: center;
 
   &:hover,
   &:focus {
-    top: 1px;
+    top: 9px;
     background-color: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }

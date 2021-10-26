@@ -33,11 +33,12 @@ ul {
 }
 
 .wrapper {
+  width: 100%;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 
-  @media screen and (min-width: $mobile) and (max-width: $mobile) {
+  @media screen and (min-width: $mobile) {
     width: $mobile;
   }
 
@@ -49,16 +50,14 @@ ul {
     width: $desktop;
   }
 
-  overflow: hidden;
+  @media screen and (min-width: 320px) {
+    overflow: hidden;
+  }
 }
 
 section {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: $desktop) {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 
 .vis-hidden {
@@ -87,19 +86,29 @@ section {
 .logo {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
   color: #000;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer-logo {
   font-family: Raleway;
   font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
   color: #fff;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .header__span,
