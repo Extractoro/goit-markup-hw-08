@@ -25,7 +25,7 @@
             aria-expanded="false"
             aria-controls="mobile-menu"
           >
-            <svg class="icon__menu" width="40" height="40">
+            <svg class="icon__open" width="40" height="40">
               <use href="./images/symbol-defs.svg#hamburger"></use>
             </svg>
           </button>
@@ -539,30 +539,47 @@
         </svg>
       </button>
 
-      <ul class="menu-sections">
-        <li class="menu-sections__item">
-          <a class="menu-sections__link active" href="#">Студия</a>
-        </li>
-        <li class="menu-sections__item">
-          <a class="menu-sections__link link" href="./portfolio.html">Портфолио</a>
-        </li>
-        <li class="menu-sections__item">
-          <a class="menu-sections__link link" href="#">Контакты</a>
-        </li>
-      </ul>
+      <div class="menu-mobile__absolute">
+        <ul class="menu-sections list">
+          <li class="menu-sections__item">
+            <a class="menu-sections__link active" href="#">Студия</a>
+          </li>
+          <li class="menu-sections__item">
+            <a class="menu-sections__link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="menu-sections__item">
+            <a class="menu-sections__link link" href="#">Контакты</a>
+          </li>
+        </ul>
 
-      <ul class="menu-contacts">
-        <li class="menu-contacts__item">
-          <a class="menu-contacts__menu-email link" href="mailto:info@devstudio.com">
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="menu-contacts__item">
-          <a class="menu-contacts__menu-tel link" href="tel:+38 096 111 11 11">
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+        <ul class="menu-contacts list">
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__menu-tel link" href="tel:+38 096 111 11 11">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__menu-email link" href="mailto:info@devstudio.com">
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+
+        <ul class="menu-social list">
+          <li class="menu-social__item">
+            <a href="#" class="menu-social__link link">Instagram</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="#" class="menu-social__link link">Twitter</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="#" class="menu-social__link link">Facebook</a>
+          </li>
+          <li class="menu-social__item">
+            <a href="#" class="menu-social__link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
     <script
       defer
