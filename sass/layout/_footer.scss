@@ -191,7 +191,6 @@
 
 .footer-form__submit {
   position: relative;
-  top: 7px;
   background: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -212,9 +211,18 @@
 
   &:hover,
   &:focus {
-    top: 9px;
+    top: 1px;
     background-color: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (min-width: $desktop) {
+    top: 7px;
+
+    &:hover,
+    &:focus {
+      top: 9px;
+    }
   }
 }
 

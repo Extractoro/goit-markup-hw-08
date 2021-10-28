@@ -28,6 +28,7 @@
 
   @media (min-width: $desktop) {
     background-image: url(/images/first-section/first-section-desktop-min.jpg);
+    padding: 200px 0;
 
     @media (min-width: $desktop) and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -54,6 +55,12 @@
 
   @media screen and (min-width: $tablet) {
     width: 360px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 

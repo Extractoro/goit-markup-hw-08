@@ -471,6 +471,7 @@ section {
   .benefits__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 
@@ -1020,7 +1021,6 @@ section {
 
 .footer-form__submit {
   position: relative;
-  top: 7px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1039,9 +1039,18 @@ section {
 }
 
 .footer-form__submit:hover, .footer-form__submit:focus {
-  top: 9px;
+  top: 1px;
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__submit {
+    top: 7px;
+  }
+  .footer-form__submit:hover, .footer-form__submit:focus {
+    top: 9px;
+  }
 }
 
 .footer-form__icon {
