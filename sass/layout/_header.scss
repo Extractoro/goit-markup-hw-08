@@ -23,6 +23,11 @@
 .header-portfolio {
   display: flex;
   border: 1px solid #ececec;
+  padding: 10px 0;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .header__logo {

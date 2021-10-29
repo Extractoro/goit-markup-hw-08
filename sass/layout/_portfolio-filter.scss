@@ -5,12 +5,32 @@
 
 .filter__list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    justify-content: center;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
+  }
 }
 
 .filter__item {
-  margin-right: 8px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  &:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 8px;
+  }
 }
 
 .filter__link {
