@@ -511,7 +511,7 @@ section {
 }
 
 .first-section {
-  background-image: url(/images/first-section/first-section-mobile-min.jpg);
+  background-image: url(./images/first-section/first-section-mobile-min.jpg);
   padding: 118px 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -519,50 +519,50 @@ section {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .first-section {
-    background-image: url(/images/first-section/first-section-2x-mobile-min.jpg);
+    background-image: url(./images/first-section/first-section-2x-mobile-min.jpg);
   }
 }
 
 @media (min-device-pixel-ratio: 3), (min-resolution: 384dpi), (min-resolution: 3dppx) {
   .first-section {
-    background-image: url(/images/first-section/first-section-3x-mobile-min.jpg);
+    background-image: url(./images/first-section/first-section-3x-mobile-min.jpg);
   }
 }
 
 @media (min-width: 768px) {
   .first-section {
-    background-image: url(/images/first-section/first-section-tablet-min.jpg);
+    background-image: url(./images/first-section/first-section-tablet-min.jpg);
   }
 }
 
 @media (min-width: 768px) and (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
   .first-section {
-    background-image: url(/images/first-section/first-section-2x-tablet-min.jpg);
+    background-image: url(./images/first-section/first-section-2x-tablet-min.jpg);
   }
 }
 
 @media (min-width: 768px) and (min-width: 768px) and (min-device-pixel-ratio: 3), (min-width: 768px) and (min-resolution: 384dpi), (min-width: 768px) and (min-resolution: 3dppx) {
   .first-section {
-    background-image: url(/images/first-section/first-section-3x-tablet-min.jpg);
+    background-image: url(./images/first-section/first-section-3x-tablet-min.jpg);
   }
 }
 
 @media (min-width: 1200px) {
   .first-section {
-    background-image: url(/images/first-section/first-section-desktop-min.jpg);
+    background-image: url(./images/first-section/first-section-desktop-min.jpg);
     padding: 200px 0;
   }
 }
 
 @media (min-width: 1200px) and (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
   .first-section {
-    background-image: url(/images/first-section/first-section-2x-desktop-min.jpg);
+    background-image: url(./images/first-section/first-section-2x-desktop-min.jpg);
   }
 }
 
 @media (min-width: 1200px) and (min-width: 1200px) and (min-device-pixel-ratio: 3), (min-width: 1200px) and (min-resolution: 384dpi), (min-width: 1200px) and (min-resolution: 3dppx) {
   .first-section {
-    background-image: url(/images/first-section/first-section-3x-desktop-min.jpg);
+    background-image: url(./images/first-section/first-section-3x-desktop-min.jpg);
   }
 }
 
