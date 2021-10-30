@@ -1,5 +1,6 @@
 .team {
   background-color: #f5f4fa;
+  padding-bottom: 30px;
 
   @media screen and (min-width: $desktop) {
     padding-bottom: 95px;
@@ -15,10 +16,11 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: $secondary-title-color;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: $desktop) {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
